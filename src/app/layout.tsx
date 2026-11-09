@@ -27,11 +27,10 @@ export const metadata: Metadata = {
     "Digitalisierung Handwerksbetrieb",
     "Telefonzentrale KI",
     "DSGVO Telefonassistent",
-    "Enrico Gross",
     "Castrop-Rauxel",
   ],
-  authors: [{ name: "Enrico Gross", url: "https://avelsorn.de" }],
-  creator: "Enrico Gross",
+  authors: [{ name: "Avelsorn", url: "https://avelsorn.de" }],
+  creator: "Avelsorn",
   publisher: "Avelsorn",
   formatDetection: {
     telephone: true,
@@ -79,18 +78,13 @@ export default function RootLayout({
     "@type": "ProfessionalService",
     name: "Avelsorn",
     alternateName: "Avelsorn Unternehmensberatung",
-    founder: {
-      "@type": "Person",
-      name: "Enrico Gross",
-    },
     url: "https://avelsorn.de",
     telephone: "+4915567504871",
     email: "kontakt@avelsorn.de",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Gertherstraße 76",
       addressLocality: "Castrop-Rauxel",
-      postalCode: "44577",
+      addressRegion: "NRW",
       addressCountry: "DE",
     },
     geo: {

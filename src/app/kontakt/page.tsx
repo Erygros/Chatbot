@@ -57,13 +57,14 @@ export default function KontaktPage() {
             </div>
 
             <div className="info-block">
-              <span className="text-micro info-label">Postanschrift</span>
-              <address className="info-address text-small">
-                <strong>Avelsorn · Enrico Gross</strong><br />
-                Gertherstraße 76<br />
-                44577 Castrop-Rauxel<br />
-                Nordrhein-Westfalen, Deutschland
-              </address>
+              <span className="text-micro info-label">Anbieterkennzeichnung</span>
+              <p className="text-small text-muted" style={{ margin: "0.25rem 0" }}>
+                Die ladungsfähige Anschrift und alle gesetzlichen Angaben gemäß § 5 DDG finden Sie in unserem{" "}
+                <a href="/impressum" className="link-accent">
+                  Impressum
+                </a>
+                .
+              </p>
             </div>
 
             <div className="info-block info-block-notice">

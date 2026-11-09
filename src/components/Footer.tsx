@@ -20,12 +20,6 @@ export function Footer() {
 
         <div className="col-4 footer-col-contact">
           <span className="footer-heading text-micro">Direkter Kontakt</span>
-          <address className="footer-address text-small">
-            <strong>Enrico Gross · Avelsorn</strong><br />
-            Gertherstraße 76<br />
-            44577 Castrop-Rauxel<br />
-            Deutschland
-          </address>
           <div className="footer-contact-links text-small">
             <div>
               <span className="text-muted">Telefon: </span>
@@ -38,6 +32,16 @@ export function Footer() {
               <a href="mailto:kontakt@avelsorn.de" className="footer-link">
                 kontakt@avelsorn.de
               </a>
+            </div>
+            <div style={{ marginTop: "0.5rem" }}>
+              <span className="text-muted">Erreichbarkeit: </span>
+              <span>Mo.–Fr. 08:00 – 18:00 Uhr</span>
+            </div>
+            <div style={{ marginTop: "0.25rem" }}>
+              <span className="text-muted">Anschrift & Rechtliches: </span>
+              <Link href="/impressum" className="footer-link">
+                Siehe Impressum
+              </Link>
             </div>
           </div>
         </div>
@@ -76,7 +80,7 @@ export function Footer() {
 
       <div className="footer-bottom">
         <p className="text-micro text-muted">
-          © {currentYear} Enrico Gross, Avelsorn. Alle Rechte vorbehalten.
+          © {currentYear} Avelsorn. Alle Rechte vorbehalten.
         </p>
         <p className="text-micro text-muted">
           WCAG 2.2 AA / EN 301 549 Konformität angestrebt

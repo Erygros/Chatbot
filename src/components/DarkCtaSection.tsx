@@ -54,13 +54,11 @@ export function DarkCtaSection() {
 
           <div className="direct-item">
             <span className="direct-label text-small" style={{ color: "var(--color-dark-muted)" }}>
-              Standort:
+              Beratung & Betreuung:
             </span>
-            <address className="direct-address text-small" style={{ color: "var(--color-dark-muted)" }}>
-              Avelsorn · Enrico Gross<br />
-              Gertherstraße 76<br />
-              44577 Castrop-Rauxel
-            </address>
+            <p className="text-small" style={{ color: "var(--color-dark-muted)", margin: 0, lineHeight: 1.5 }}>
+              Bundesweit für Handwerksbetriebe, Praxen und kleine Unternehmen.
+            </p>
           </div>
         </div>
       </div>
