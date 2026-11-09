@@ -1,0 +1,95 @@
+/* ==========================================================================
+   AVELSORN 12-SPALTEN-RASTER & LAYOUT
+   Volle Breite (Full-Bleed), asymmetrische Komposition bis 2560px,
+   fluide Ränder und Zeilenumbruch ohne horizontales Scrollen.
+   ========================================================================== */
+
+/* Full-Bleed Container mit randlosem Hintergrund und fluidem Innenabstand */
+.bleed-container {
+  width: 100%;
+  padding-left: var(--gutter-outer);
+  padding-right: var(--gutter-outer);
+  box-sizing: border-box;
+}
+
+/* 12-Spalten-CSS-Grid */
+.grid-12 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: var(--gap-grid);
+  row-gap: var(--space-l);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Asymmetrische Spalten-Helfer für redaktionelle Layouts */
+.col-12 { grid-column: span 12; }
+.col-11 { grid-column: span 11; }
+.col-10 { grid-column: span 10; }
+.col-9  { grid-column: span 9; }
+.col-8  { grid-column: span 8; }
+.col-7  { grid-column: span 7; }
+.col-6  { grid-column: span 6; }
+.col-5  { grid-column: span 5; }
+.col-4  { grid-column: span 4; }
+.col-3  { grid-column: span 3; }
+.col-2  { grid-column: span 2; }
+.col-1  { grid-column: span 1; }
+
+/* Auf kleineren Bildschirmen fließen Spalten standardmäßig vollflächig */
+@media (max-width: 900px) {
+  .col-11, .col-10, .col-9, .col-8, .col-7,
+  .col-6, .col-5, .col-4, .col-3 {
+    grid-column: span 12;
+  }
+}
+
+/* Große Bildschirme (bis 2560px): Asymmetrische Platzierung */
+@media (min-width: 1440px) {
+  .hero-headline-span {
+    grid-column: 1 / span 9;
+  }
+  .hero-meta-span {
+    grid-column: 10 / span 3;
+    padding-top: var(--space-s);
+    border-left: var(--border-hairline);
+    padding-left: var(--space-m);
+  }
+
+  .editorial-lead-span {
+    grid-column: 1 / span 7;
+  }
+  .editorial-aside-span {
+    grid-column: 9 / span 4;
+  }
+}
+
+/* Horizontale Trennlinie (Hairline) über das gesamte Raster */
+.hairline-separator {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(20, 20, 18, 0.12);
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-xl);
+  border: none;
+}
+
+.hairline-separator-dark {
+  background-color: rgba(241, 238, 231, 0.16);
+}
+
+/* Sektions-Abstände */
+.section-padding {
+  padding-top: var(--space-2xl);
+  padding-bottom: var(--space-2xl);
+}
+
+.section-padding-s {
+  padding-top: var(--space-l);
+  padding-bottom: var(--space-l);
+}
+
+.section-dark {
+  background-color: var(--color-dark-bg);
+  color: var(--color-dark-text);
+}

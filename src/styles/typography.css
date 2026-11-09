@@ -1,0 +1,176 @@
+/* ==========================================================================
+   AVELSORN TYPOGRAFIE-SYSTEM
+   Redaktionell, sachlich, wie ein gut gesetztes Fachmagazin.
+   ========================================================================== */
+
+h1, .text-display, .text-h1 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.08;
+  color: var(--color-ink);
+  margin-top: 0;
+  text-wrap: balance;
+}
+
+.text-display {
+  font-size: var(--step-5);
+}
+
+h1, .text-h1 {
+  font-size: var(--step-4);
+}
+
+h2, .text-h2 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: var(--step-3);
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  color: var(--color-ink);
+  margin-top: 0;
+  text-wrap: balance;
+}
+
+h3, .text-h3 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: var(--step-1);
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  color: var(--color-ink);
+  margin-top: 0;
+}
+
+h4, .text-h4 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: var(--step-0);
+  line-height: 1.4;
+  color: var(--color-ink);
+  margin-top: 0;
+}
+
+p, .text-body {
+  font-family: var(--font-sans);
+  font-size: var(--step-0);
+  line-height: 1.62;
+  color: var(--color-ink);
+  max-width: var(--measure-prose);
+  margin-top: 0;
+}
+
+.text-lead {
+  font-family: var(--font-sans);
+  font-size: var(--step-1);
+  line-height: 1.5;
+  color: var(--color-ink);
+  max-width: var(--measure-prose);
+}
+
+.text-muted {
+  color: var(--color-ink-muted);
+}
+
+.text-small {
+  font-family: var(--font-sans);
+  font-size: var(--step--1);
+  line-height: 1.5;
+}
+
+.text-micro {
+  font-family: var(--font-mono);
+  font-size: var(--step--2);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-ink-muted);
+}
+
+.text-mono {
+  font-family: var(--font-mono);
+  font-feature-settings: "tnum" 1;
+}
+
+.editorial-number {
+  font-family: var(--font-serif);
+  font-size: var(--step-3);
+  line-height: 1;
+  color: var(--color-accent);
+  font-feature-settings: "tnum" 1;
+}
+
+/* Links & Interaktive Typografie */
+a {
+  color: var(--color-ink);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+
+a:hover {
+  color: var(--color-accent);
+  text-decoration-color: var(--color-accent);
+}
+
+a.link-accent {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+a.link-accent:hover {
+  color: var(--color-accent-hover);
+}
+
+a.nav-link {
+  text-decoration: none;
+  font-family: var(--font-sans);
+  font-size: var(--step--1);
+  font-weight: 500;
+  color: var(--color-ink);
+  padding: 0.5rem 0.25rem;
+  border-bottom: 2px solid transparent;
+}
+
+a.nav-link:hover,
+a.nav-link[aria-current="page"] {
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
+}
+
+/* Dunkler Abschnitt Typo-Anpassungen */
+.section-dark h1,
+.section-dark h2,
+.section-dark h3,
+.section-dark .text-display,
+.section-dark .text-h1,
+.section-dark .text-h2 {
+  color: var(--color-dark-text);
+}
+
+.section-dark p,
+.section-dark .text-body {
+  color: var(--color-dark-text);
+}
+
+.section-dark .text-muted {
+  color: var(--color-dark-muted);
+}
+
+.section-dark .text-micro {
+  color: var(--color-dark-faint);
+}
+
+.section-dark a {
+  color: var(--color-dark-text);
+}
+
+.section-dark a:hover {
+  color: var(--color-dark-accent);
+  text-decoration-color: var(--color-dark-accent);
+}
+
+.section-dark a.link-accent {
+  color: var(--color-dark-accent);
+}
